@@ -8,10 +8,9 @@ namespace Basic_Concepts
         static void Main(string[] args)
         {
             Console.WriteLine("Create a program with Inheritance concept with example in c#");
-            Child child = new Child();
-            child.Car();
-            child.Home();
-            child.Game();
+            Daughter m = new Daughter();
+            m.Car();
+            m.Saree();
         }
     }
 }
