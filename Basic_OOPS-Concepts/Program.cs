@@ -7,13 +7,20 @@ namespace Basic_Concepts
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Create a program with Inheritance concept with example in c#");
-            Son son = new Son();
-            son.Car();
-            son.Working();
-            Daughter dam = new Daughter();
-            dam.Car();
-            dam.Study();
+            Console.WriteLine("Create a program with Polymorphism concept with example in c#");
+            Console.WriteLine("Output for Method Overloading");
+            Addition add = new Addition();
+            Console.WriteLine("Enter float value");
+            float x = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter integer value");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter double value");
+            double z = Convert.ToDouble(Console.ReadLine());
+            add.Add(x, y, z);
+
+            Console.WriteLine("\nOutput for Method Overriding");
+            Adding op = new Operation();
+            op.Add(4, 5);
         }
     }
 }
